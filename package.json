@@ -1,0 +1,26 @@
+{
+  "name": "revolttools",
+  "version": "1.0.0",
+  "description": "Simple toolkit for revolt.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "revolt builder",
+    "command builder",
+    "embed builder"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "revolt.js": "^6.0.20",
+    "revolthandler.js": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5"
+  }
+}
