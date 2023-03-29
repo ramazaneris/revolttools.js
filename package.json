@@ -1,16 +1,22 @@
 {
-  "name": "revolttools",
-  "version": "1.0.0",
+  "name": "revolttools.js",
+  "version": "1.0.11",
   "description": "Simple toolkit for revolt.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramazaneris/revolttools.js.git"
+  },
   "keywords": [
     "revolt builder",
     "command builder",
-    "embed builder"
+    "embed builder",
+    "revolt tools",
+    "toolset"
   ],
   "author": "",
   "license": "ISC",
