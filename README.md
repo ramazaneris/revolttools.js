@@ -76,6 +76,30 @@ export default {
 }
 ```
 
+### Example Image Uploader
+
+```js
+//"./commands/general/ping.js"
+const { EmbedBuilder, Uploader } = require("revolttools.js");
+
+exports.default = {
+  name: "ping",
+  description: "Ping!", //description :P
+  //Be careful
+  async code(message, args, client) {
+    const uploader = Uploader(client);
+    let emb = new EmbedBuilder()
+      .setDescription("It's image")
+      .setTitle("Cool title")
+      .setColour("orange") //supports hex codes
+      .setMedia(await uploader.upload("https://api.mbps.tk/cdn/o7nf16yule.png","image.png")); //You can add an big picture
+    message.channel.sendMessage({ embeds: [emb] });
+
+    /*And you can get output as a json with console.log(emb.toJson())*/
+  },
+};
+```
+
 - [Come to my server](https://rvlt.gg/zrmFWtJz)
 
 # Will add new features in the future

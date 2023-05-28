@@ -5,9 +5,9 @@ import "dotenv/config";
 const client = new Client();
 const handler = new Handler({
   client: client,
-  prefix: "!",
+  prefix: "/",
   owners: ["01FCXFBQPYCBZWX40NSBYXYAWW"],
-  path: "./commands/typescript",
+  path: "./test/commands/typescript",
 });
 
 client.loginBot(`${process.env.BOT_TOKEN}`);
